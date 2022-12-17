@@ -1,0 +1,76 @@
+.download {
+    display: table;
+    position: relative;
+    padding: 10px 25px;
+    background: orangered;
+    color: white;
+    font:13px verdana;
+    text-decoration: none;
+    text-align: center;
+    text-indent: 15px;
+    margin:10px auto;
+    transition:all 0.5s ease 0s;
+}
+
+.download:hover {
+    background-color: black;
+    color: white;
+}
+
+.download:before, .download:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+}
+
+.download:before {
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+}
+
+.download:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 2s linear infinite;
+    animation-play-state: paused;
+}
+
+.download:hover:before {
+    border-color: orangered;
+}
+
+.download:hover:after {
+    border-top-color: orangered;
+    animation-play-state: running;
+}
+
+@keyframes downloadArrow {
+    0% {
+            margin-top: -7px;
+            opacity: 1;
+    }
+    
+    0.001% {
+            margin-top: -15px;
+            opacity: 0;
+    }
+    
+    50% {
+            opacity: 1;
+    }
+    
+    100% {
+            margin-top: 0;
+            opacity: 0;
+    }
+}
