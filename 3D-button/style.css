@@ -1,0 +1,51 @@
+
+button{
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 200;
+    transition: all 0.2s;
+    margin: 5px;
+    border-bottom: 0px solid white;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scaleX(0.9) translateY(4px);
+}
+
+button.orange{
+    background: orange;
+}
+button.orange:not(:active){
+    border-bottom: 4px solid orangered;
+}
+
+button{
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px 14px 10px;
+    color: black;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 200;
+    transition: all 0.2s;
+    margin: 5px;
+    border-bottom: 0px solid white;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scaleX(0.9) scaleY(4px);
+}
+
+button.orange{
+    background: orange;
+}
+
+button:not(:active){
+    box-shadow: 0 -4px 0 rgba(0,0,0, 0.10) inset;
+}
